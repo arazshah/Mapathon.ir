@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapathon ایران - جامعه نقشه‌کشان داوطلب</title>
+    <meta name="description" content="پلتفرم آموزش و برگزاری رویدادهای نقشه‌کشی داوطلبانه در ایران">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mapathon ایران">
+    <meta property="og:description" content="با ما نقشه ایران را کامل کنید">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://mapathon.ir">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Marked.js for Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Highlight.js for code syntax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="/assets/images/logo.svg" alt="Mapathon Iran" class="logo">
+                    <span class="brand-text">Mapathon ایران</span>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">خانه</a></li>
+                    <li class="dropdown">
+                        <a href="#start" class="nav-link">شروع کار <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#what-is-osm">OSM چیست؟</a></li>
+                            <li><a href="#tools">ابزارها</a></li>
+                            <li><a href="#first-edit">اولین ویرایش</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#guides" class="nav-link">راهنماها <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#organize">برگزاری Mapathon</a></li>
+                            <li><a href="#community">جامعه‌سازی</a></li>
+                            <li><a href="#quality">کنترل کیفیت</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#events" class="nav-link">رویدادها</a></li>
+                    <li><a href="#resources" class="nav-link">منابع</a></li>
+                    <li><a href="#about" class="nav-link">درباره ما</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">با هم نقشه ایران را کامل کنیم</h1>
+            <p class="hero-subtitle">جامعه نقشه‌کشان داوطلب ایران</p>
+            <div class="hero-buttons">
+                <a href="#start" class="btn btn-primary">شروع کنید</a>
+                <a href="#events" class="btn btn-secondary">رویدادها</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span class="stat-number">۱۲۰+</span>
+                <span class="stat-label">عضو فعال</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span class="stat-number">۵۰۰۰+</span>
+                <span class="stat-label">ویرایش نقشه</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-check"></i>
+                <span class="stat-number">۸</span>
+                <span class="stat-label">رویداد برگزار شده</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Dynamic Content Loader -->
+            <div id="content-area" class="content-wrapper">
+                <!-- محتوا از فایل‌های Markdown بارگذاری می‌شود -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Quick Start Section -->
+    <section class="quick-start" id="quick-start">
+        <div class="container">
+            <h2 class="section-title">شروع سریع</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">۱</div>
+                    <h3>ثبت‌نام در OSM</h3>
+                    <p>در OpenStreetMap ثبت‌نام کنید و حساب کاربری بسازید</p>
+                    <a href="#" class="step-link">آموزش ثبت‌نام →</a>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">۲</div>
+                    <h3>آموزش ابزارها</h3>
+                    <p>با ابزارهای نقشه‌کشی مثل iD Editor آشنا شوید</p>
+                    <a href="#" class="step-link">معرفی ابزارها →</a>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">۳</div>
+                    <h3>اولین ویرایش</h3>
+                    <p>اولین تغییرات خود را در نقشه ایجاد کنید</p>
+                    <a href="#" class="step-link">شروع ویرایش →</a>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">۴</div>
+                    <h3>پیوستن به جامعه</h3>
+                    <p>به گروه تلگرام ما بپیوندید و سوالات خود را بپرسید</p>
+                    <a href="#" class="step-link">عضویت در گروه →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+        <div class="container">
+            <h2 class="section-title">رویدادهای آینده</h2>
+            <div class="events-grid">
+                <div class="event-card featured">
+                    <div class="event-date">
+                        <span class="day">۱۵</span>
+                        <span class="month">آبان</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Mapathon دانشگاه تهران</h3>
+                        <p>رویداد بزرگ نقشه‌کشی با حضور ۱۰۰ نفر</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-clock"></i> ۹ صبح - ۵ عصر</span>
+                            <span><i class="fas fa-map-marker-alt"></i> دانشکده جغرافیا</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">ثبت‌نام</a>
+                    </div>
+                </div>
+                <!-- More events loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <h2 class="section-title">منابع آموزشی</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>مقالات آموزشی</h3>
+                    <p>مجموعه کامل آموزش‌های متنی</p>
+                    <a href="#" class="resource-link">مشاهده مقالات</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-video"></i>
+                    <h3>ویدیوهای آموزشی</h3>
+                    <p>آموزش تصویری گام به گام</p>
+                    <a href="#" class="resource-link">مشاهده ویدیوها</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-download"></i>
+                    <h3>دانلودها</h3>
+                    <p>نرم‌افزارها و ابزارهای مورد نیاز</p>
+                    <a href="#" class="resource-link">صفحه دانلود</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-link"></i>
+                    <h3>لینک‌های مفید</h3>
+                    <p>منابع خارجی و سایت‌های مرتبط</p>
+                    <a href="#" class="resource-link">مشاهده لینک‌ها</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <div class="community-content">
+                <h2>به جامعه ما بپیوندید</h2>
+                <p>با بیش از ۱۰۰ عضو فعال در سراسر ایران</p>
+                <div class="social-links">
+                    <a href="#" class="social-link telegram">
+                        <i class="fab fa-telegram"></i>
+                        <span>گروه تلگرام</span>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>اینستاگرام</span>
+                    </a>
+                    <a href="#" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>لینکدین</span>
+                    </a>
+                    <a href="#" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>گیت‌هاب</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>درباره Mapathon ایران</h4>
+                    <p>پلتفرم آموزش و برگزاری رویدادهای نقشه‌کشی داوطلبانه برای بهبود نقشه‌های آزاد ایران</p>
+                    <img src="/assets/images/logo.svg" alt="Logo" class="footer-logo">
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <ul class="footer-links">
+                        <li><a href="#start">شروع کار</a></li>
+                        <li><a href="#guides">راهنماها</a></li>
+                        <li><a href="#events">رویدادها</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>منابع</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">مقالات آموزشی</a></li>
+                        <li><a href="#">ویدیوها</a></li>
+                        <li><a href="#">دانلودها</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>ارتباط با ما</h4>
+                    <p>
+                        <i class="fas fa-envelope"></i> info@mapathon.ir<br>
+                        <i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© ۱۴۰۳ Mapathon ایران - تمامی حقوق تحت لیسانس <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
