@@ -1,0 +1,8 @@
+title: "Mapathon ایران"
+email: "info@mapathon.ir"
+description: "پلتفرم متن‌باز برای برگزاری رویدادهای نقشه‌کشی در ایران"
+baseurl: "" # برای GitHub Pages خالی بگذارید
+url: "https://mapathon.ir"
+
+markdown: kramdown
+theme: minima
