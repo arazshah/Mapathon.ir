@@ -102,7 +102,7 @@ class Router {
     constructor() {
         this.routes = {
             'home': 'home.md',
-            'what-is-osm': '/content/getting-started/what-is-osm.md',
+            'what-is-osm': '/getting-started/what-is-osm.md',
             'tools': '/content/getting-started/tools.md',
             'first-edit': '/content/getting-started/first-edit.md',
             'organize': '/content/guides/organizing-mapathon.md',
