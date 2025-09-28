@@ -101,7 +101,7 @@ const markdownLoader = new MarkdownLoader();
 class Router {
     constructor() {
         this.routes = {
-            'home': '/content/home.md',
+            'home': 'home.md',
             'what-is-osm': '/content/getting-started/what-is-osm.md',
             'tools': '/content/getting-started/tools.md',
             'first-edit': '/content/getting-started/first-edit.md',
